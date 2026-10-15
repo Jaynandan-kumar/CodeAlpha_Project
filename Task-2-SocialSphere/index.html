@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SocialSphere — Connect, Share, Inspire</title>
+    <meta name="description" content="SocialSphere - A modern social media platform to connect, share, and inspire." />
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+      html.light, html.light body {
+        background-color: #fafafa !important;
+        color: #000000;
+      }
+    </style>
+    <script>
+      (function () {
+        document.documentElement.classList.add("light");
+        document.documentElement.setAttribute("data-theme", "light");
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
