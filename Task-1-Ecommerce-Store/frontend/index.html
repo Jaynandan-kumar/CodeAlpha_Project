@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopVerse — Premium E-commerce Store</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">ShopVerse</a>
+      <ul class="navbar-links" id="navLinks">
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html" class="cart-link">🛒 Cart <span class="cart-badge" id="cartBadge" style="display:none">0</span></a></li>
+        <!-- Auth links injected by JS -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="hero-tag">🚀 New Arrivals 2024</span>
+        <h1>Discover <span>Premium</span> Products</h1>
+        <p>Shop the latest tech, fashion, and lifestyle products with free shipping on orders above ₹5,000. Quality guaranteed.</p>
+        <div class="hero-buttons">
+          <a href="products.html" class="btn btn-primary btn-lg">Shop Now →</a>
+          <a href="register.html" class="btn btn-outline btn-lg">Join Free</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-blob"></div>
+        <div class="floating-card card-1">
+          <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=100&h=100&fit=crop" alt="iPhone">
+          <div class="fc-info"><h4>iPhone 15 Pro</h4><p>₹1,29,999</p></div>
+        </div>
+        <div class="floating-card card-2">
+          <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=100&h=100&fit=crop" alt="Sony">
+          <div class="fc-info"><h4>Sony XM5</h4><p>₹29,999</p></div>
+        </div>
+        <div class="floating-card card-3">
+          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=100&h=100&fit=crop" alt="MacBook">
+          <div class="fc-info"><h4>MacBook Air</h4><p>₹1,14,999</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section" id="featured">
+    <div class="section-header">
+      <h2>Featured Products</h2>
+      <p>Top-rated products loved by our customers</p>
+    </div>
+    <div class="products-grid" id="featuredGrid">
+      <!-- Populated by JS -->
+    </div>
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="products.html" class="btn btn-primary btn-lg">View All Products →</a>
+    </div>
+  </section>
+
+  <!-- Why Shop With Us -->
+  <section class="section features-section">
+    <div class="section-header">
+      <h2>Why Shop With Us?</h2>
+      <p>We provide the best shopping experience</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card" data-reveal>
+        <div class="feature-icon">🚚</div>
+        <h3>Free Shipping</h3>
+        <p>Free delivery on orders above ₹5,000</p>
+      </div>
+      <div class="feature-card" data-reveal>
+        <div class="feature-icon">🔒</div>
+        <h3>Secure Payment</h3>
+        <p>Multiple payment options with encryption</p>
+      </div>
+      <div class="feature-card" data-reveal>
+        <div class="feature-icon">↩️</div>
+        <h3>Easy Returns</h3>
+        <p>7-day hassle-free return policy</p>
+      </div>
+      <div class="feature-card" data-reveal>
+        <div class="feature-icon">💬</div>
+        <h3>24/7 Support</h3>
+        <p>Round the clock customer assistance</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>ShopVerse</h4>
+        <p>Your one-stop destination for premium products.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="orders.html">Orders</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="products.html?category=Electronics">Electronics</a></li>
+          <li><a href="products.html?category=Laptops">Laptops</a></li>
+          <li><a href="products.html?category=Audio">Audio</a></li>
+          <li><a href="products.html?category=Fashion">Fashion</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">support@shopverse.in</a></li>
+          <li><a href="#">+91 98765 43210</a></li>
+          <li><a href="#">Mumbai, India</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 ShopVerse. Built for CodeAlpha Full Stack Development Internship.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
